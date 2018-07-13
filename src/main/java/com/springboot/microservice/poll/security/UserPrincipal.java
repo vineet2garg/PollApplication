@@ -43,7 +43,7 @@ public class UserPrincipal implements UserDetails {
 						.name()))
 				.collect(Collectors.toList());
 
-		return new UserPrincipal(user.getId(), user.getName(), user.getUsername(), user.getEmail(), user.getPassword(), authorities);
+		return new UserPrincipal(user.getId(), user.getName(), user.getUsername(), user.getPassword(), user.getEmail(), authorities);
 	}
 
 	@Override
